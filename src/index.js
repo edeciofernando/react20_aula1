@@ -1,17 +1,30 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+//import { PrimeiraApp } from './PrimeiraApp';
+import ContadorApp from './ContadorApp';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+//const mensagem = 'Bem-vindo: Desenvolvimento Web para Dispositivos Móveis';
+// const mensagem = <div>
+//                     <h1>Bem-Vindo: Aula 1</h1>
+//                     <h2>Desenvolvimento Web para Dispositivos Móveis</h2>
+//                  </div>
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// com Fragment precisa fazer import {Fragment}
+// const mensagem = <Fragment>
+//                     <h1>Bem-Vindo: Aula 1</h1>
+//                     <h2>Desenvolvimento Web para Dispositivos Móveis</h2>
+//                  </Fragment>
+
+// const mensagem = <>
+//                     <h1>Bem-Vindo: Aula 1</h1>
+//                     <h2>Desenvolvimento Web para Dispositivos Móveis</h2>
+//                  </>
+
+// const root = document.querySelector('#root');
+
+// ReactDOM.render(mensagem, root);
+
+const root = document.querySelector('#root');
+
+//ReactDOM.render(<PrimeiraApp nome="Ana Maria" idade="24" />, root);
+ReactDOM.render(<ContadorApp />, root);
